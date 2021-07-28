@@ -4,14 +4,14 @@
 
 Vamos imaginar que vc (Cliente) esteja num restaurante, e um Garçon irá atendê-lo, anotar os pedidos no bloco de notas e para levar seus pedidos a cozinha
 
-Cliente (Client)
-Garçon (pedidos, levar_pedidos) -> API
-Bloco de Notas -> Protocolo HTTP
-Cozinha (Server)
+- Cliente (Client)
+- Garçon (pedidos, levar_pedidos) -> API
+- Bloco de Notas -> Protocolo HTTP
+- Cozinha (Server)
 
 Sendo assim a API é responsável por:
 
-- Estabelecer comunicação entre diferentes serviços
+- Estabelecer comunicação entre diferentes sistemas
 - Meio de campo entre tecnologias
 - Intermediador para troca de informações
 
@@ -48,7 +48,7 @@ O Rest delimita algumas obrigações nas transferências de dados
 
 - _Client-server_: Client-server: Separação do cliente e do armazenamento de dados (servidor), dessa forma, poderemos ter uma portabilidade do nosso sistema, usando o React para WEB e React Native para o smartphone, por exemplo.
 
-- _Stateless_: Cada requisição que o cliente faz para o servidor, deverá conter todas as informações necessárias para o servidor entender e responder (RESPONSE) a requisição (REQUEST). Exemplo: A sessão do usuário deverá ser enviada em todas as requisições, para saber se aquele usuário está autenticado e apto a usar os serviços, e o servidor não pode lembrar que o cliente foi autenticado na requisição anterior. Nos nossos cursos, temos por padrão usar tokens para as comunicações.
+- _Stateless_: Cada requisição que o cliente faz para o servidor, deverá conter todas as informações necessárias para o servidor entender e responder (RESPONSE) a requisição (REQUEST). Exemplo: A sessão do usuário deverá ser enviada em todas as requisições, para saber se aquele usuário está autenticado e apto a usar os serviços, e o servidor não pode lembrar que o cliente foi autenticado na requisição anterior. Para isso, é comum temos por padrão usar tokens para as comunicações.
 
 - _Cacheable_: As respostas para uma requisição, deverão ser explicitas ao dizer se aquela resquição, pode ou não ser cacheada pelo cliente.
 
